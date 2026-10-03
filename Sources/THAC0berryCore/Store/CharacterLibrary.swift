@@ -1,5 +1,7 @@
 import Foundation
+#if canImport(Combine)
 import Combine
+#endif
 
 /// Guarda campanhas e personagens em um JSON único no diretório Documents,
 /// com a mesma decisão de segurança do Just Pencil It: proteção de dados
