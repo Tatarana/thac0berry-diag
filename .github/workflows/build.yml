@@ -7,10 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: swift:5.9-jammy
     steps:
       - uses: actions/checkout@v4
-      - uses: swift-actions/setup-swift@v2
-        with:
-          swift-version: "5.9"
       - name: swift build (verbose)
         run: swift build -v
